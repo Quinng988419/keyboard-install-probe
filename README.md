@@ -8,7 +8,7 @@
 
 代码可以在 Windows 编辑；编译由 GitHub Actions 的 macOS 环境完成，不需要在 Windows 安装 Xcode。
 
-如果本次协作已成功登录 GitHub，我会创建公开测试仓库并触发构建。仓库只包含本项目源码，不包含 Apple 账号、证书、API Key 或聊天记录。若尚未登录，请先完成 GitHub CLI 的设备登录。
+公开测试仓库：[Quinng988419/keyboard-install-probe](https://github.com/Quinng988419/keyboard-install-probe)。仓库只包含本项目源码，不包含 Apple 账号、证书、API Key 或聊天记录。源码上传与工作流上传是两个步骤；GitHub CLI 写入 `.github/workflows` 还需要 `workflow` 权限，首次默认登录不包含该权限，需要在设备登录页补充授权。
 
 也可以自行上传：
 

@@ -13,6 +13,8 @@
 | 真实 IPA 结构及二进制 | 待构建后运行校验器；测试用合成档案不是安装包 |
 | 签名、添加键盘、微信、刷新 | 待用户真机验收 |
 
-GitHub CLI 已从官方发行页下载到工作目录。首次设备登录因 CLI 未沿用系统代理而超时；重试已配置进程内代理，目前等待用户完成新的设备登录。尚未创建远程仓库或触发 Actions；首次设备码不应再使用。
+GitHub CLI 已登录 Quinng988419；公开仓库 [keyboard-install-probe](https://github.com/Quinng988419/keyboard-install-probe) 已创建。已通过 API 上传 15 个普通源码文件，并核对其 Git blob 哈希与本地提交一致。Windows Git 上传遇到连接超时，改用 API 完成源码上传。
+
+工作流配置写入被 GitHub 拒绝：当前 CLI 的默认权限不包含 `workflow`。已发起补充授权，待用户在设备登录页完成后上传配置并启动 Actions。因此尚未生成真实 IPA；本地 `.github/workflows/build.yml` 已就绪。
 
 本版本没有网络代码、账户、AI、剪贴板访问或 App Group。构建不需要任何 Apple 凭证或 API Key。
