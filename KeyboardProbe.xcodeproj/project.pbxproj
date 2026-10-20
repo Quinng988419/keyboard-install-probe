@@ -1,0 +1,228 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        A00000000000000000000001 = {isa = PBXBuildFile; fileRef = B00000000000000000000001; };
+        A00000000000000000000002 = {isa = PBXBuildFile; fileRef = B00000000000000000000002; };
+        A00000000000000000000003 = {isa = PBXBuildFile; fileRef = B00000000000000000000003; };
+        A00000000000000000000004 = {isa = PBXBuildFile; fileRef = B00000000000000000000007; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+        C00000000000000000000001 = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F00000000000000000000001;
+            proxyType = 1;
+            remoteGlobalIDString = D00000000000000000000002;
+            remoteInfo = ProbeKeyboard;
+        };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+        C00000000000000000000002 = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 13;
+            files = (A00000000000000000000004, );
+            name = "Embed App Extensions";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+        B00000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        B00000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+        B00000000000000000000003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+        B00000000000000000000004 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        B00000000000000000000005 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        B00000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardProbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        B00000000000000000000007 = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProbeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        C00000000000000000000003 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        C00000000000000000000004 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        E00000000000000000000001 = {
+            isa = PBXGroup;
+            children = (E00000000000000000000002, E00000000000000000000003, E00000000000000000000004, );
+            sourceTree = "<group>";
+        };
+        E00000000000000000000002 = {
+            isa = PBXGroup;
+            children = (B00000000000000000000001, B00000000000000000000002, B00000000000000000000004, );
+            path = App;
+            sourceTree = "<group>";
+        };
+        E00000000000000000000003 = {
+            isa = PBXGroup;
+            children = (B00000000000000000000003, B00000000000000000000005, );
+            path = Keyboard;
+            sourceTree = "<group>";
+        };
+        E00000000000000000000004 = {
+            isa = PBXGroup;
+            children = (B00000000000000000000006, B00000000000000000000007, );
+            name = Products;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        D00000000000000000000001 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F00000000000000000000003;
+            buildPhases = (C00000000000000000000005, C00000000000000000000003, C00000000000000000000007, C00000000000000000000002, );
+            buildRules = ();
+            dependencies = (C00000000000000000000009, );
+            name = KeyboardProbe;
+            productName = KeyboardProbe;
+            productReference = B00000000000000000000006;
+            productType = "com.apple.product-type.application";
+        };
+        D00000000000000000000002 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F00000000000000000000004;
+            buildPhases = (C00000000000000000000006, C00000000000000000000004, C00000000000000000000008, );
+            buildRules = ();
+            dependencies = ();
+            name = ProbeKeyboard;
+            productName = ProbeKeyboard;
+            productReference = B00000000000000000000007;
+            productType = "com.apple.product-type.app-extension";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        F00000000000000000000001 = {
+            isa = PBXProject;
+            attributes = {BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; };
+            buildConfigurationList = F00000000000000000000002;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = "zh-Hans";
+            hasScannedForEncodings = 0;
+            knownRegions = ("zh-Hans", en, Base, );
+            mainGroup = E00000000000000000000001;
+            productRefGroup = E00000000000000000000004;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (D00000000000000000000001, D00000000000000000000002, );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        C00000000000000000000007 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        C00000000000000000000008 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        C00000000000000000000005 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000001, A00000000000000000000002, ); runOnlyForDeploymentPostprocessing = 0; };
+        C00000000000000000000006 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000003, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+        C00000000000000000000009 = {isa = PBXTargetDependency; target = D00000000000000000000002; targetProxy = C00000000000000000000001; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+        F00000000000000000000005 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_TESTABILITY = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+            };
+            name = Debug;
+        };
+        F00000000000000000000006 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = 1;
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        F00000000000000000000007 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = App/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", );
+                PRODUCT_BUNDLE_IDENTIFIER = com.codexpersonal.KeyboardProbe;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+            };
+            name = Debug;
+        };
+        F00000000000000000000008 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = App/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", );
+                PRODUCT_BUNDLE_IDENTIFIER = com.codexpersonal.KeyboardProbe;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+            };
+            name = Release;
+        };
+        F00000000000000000000009 = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                APPLICATION_EXTENSION_API_ONLY = YES;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Keyboard/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks", );
+                PRODUCT_BUNDLE_IDENTIFIER = com.codexpersonal.KeyboardProbe.Keyboard;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SKIP_INSTALL = YES;
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+            };
+            name = Debug;
+        };
+        F0000000000000000000000A = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                APPLICATION_EXTENSION_API_ONLY = YES;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = Keyboard/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks", );
+                PRODUCT_BUNDLE_IDENTIFIER = com.codexpersonal.KeyboardProbe.Keyboard;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SKIP_INSTALL = YES;
+                SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        F00000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000005, F00000000000000000000006, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        F00000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000007, F00000000000000000000008, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        F00000000000000000000004 = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000009, F0000000000000000000000A, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+    };
+    rootObject = F00000000000000000000001;
+}
