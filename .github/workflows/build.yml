@@ -1,0 +1,37 @@
+name: Build keyboard IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test IPA validation gate
+        run: python3 -m unittest discover -s tests -v
+      - name: Build unsigned device IPA and validate embedded keyboard
+        run: bash scripts/build.sh
+      - name: Upload IPA and validation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: KeyboardProbe-unsigned
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload compiler log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KeyboardProbe-build-log
+          path: build/xcodebuild.log
+          if-no-files-found: ignore
+          retention-days: 14
