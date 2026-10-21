@@ -22,6 +22,8 @@ SHA-256：`b0e6b8899cd9f21e0a7f781e3baf833e0e75a16f76d6f15e8ead11e7093f047c`。
 
 主 App ID：`com.codexpersonal.KeyboardProbe`；键盘 ID：`com.codexpersonal.KeyboardProbe.Keyboard`。
 
-当前阻碍真机验收的是数据线接口与电脑不匹配：用户确认电脑只有 USB-A 接口，需要支持数据传输的 USB-A 转 Lightning 数据线，尚未完成手机与电脑连接。因此不能声称 AltStore 安装、微信兼容性或签名刷新已通过。
+2026-10-21 继续安装时，Windows PnP 已检测到 `Apple iPhone`，状态 `OK`，数据线接口问题已解决。电脑上尚未检测到 AltServer、iTunes 或 iCloud。
+
+已从官方来源下载 Windows 安装程序：iTunes 12.13.11.1、iCloud 7.21.0.23 的 Apple Inc. 签名验证有效；AltServer 安装包来自 AltStore 官方下载。尚未运行安装程序，等待用户在本机完成安装许可及管理员确认。因此仍不能声称 AltStore 配对/安装、微信兼容性或签名刷新已通过。
 
 本版本没有网络代码、账户、AI、剪贴板访问或 App Group。构建不需要任何 Apple 凭证或 API Key。
