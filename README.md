@@ -4,6 +4,8 @@
 
 **源码 ZIP 不能安装到 iPhone。需要先在 GitHub 完成构建，再下载生成的 IPA，经 AltStore 签名安装。是否兼容你的微信版本，以真机测试为准。**
 
+已于 2026-10-21 [成功生成首个 IPA](https://github.com/Quinng988419/keyboard-install-probe/actions/runs/39524699060)，结构、真机二进制与下载校验和均通过；手机安装、微信操作和签名刷新仍待验证。拿到 `KeyboardProbe-unsigned.ipa` 后从第 2 节开始。
+
 ## 1. 云端生成 IPA
 
 代码可以在 Windows 编辑；编译由 GitHub Actions 的 macOS 环境完成，不需要在 Windows 安装 Xcode。
@@ -23,6 +25,8 @@
 ## 2. Windows 安装 AltStore Classic
 
 按 [AltStore 官方 Windows 指南](https://faq.altstore.io/altstore-classic/how-to-install-altstore-windows) 准备 Apple 的 iTunes、iCloud 和 AltServer。依赖版本与下载入口以该指南为准；已有 Microsoft Store 版 iCloud 时先看官方故障排查，不要直接卸载现有软件。
+
+这台电脑只有长方形 USB-A 接口，iPhone 13 Pro Max 手机端为 Lightning（闪电）：需要一根支持数据传输的 **USB-A 转 Lightning 数据线**。可先借用；USB-C 端的现有线无法直接插入 USB-A 口。实际完成电脑配对前，先保留 IPA，不把安装标记为成功。
 
 - 用数据线连接并解锁 iPhone，在手机上信任这台电脑。
 - 按官方指南配置 iTunes 的 Wi-Fi 同步，从 AltServer 托盘菜单选择 **Install AltStore → 你的 iPhone**。

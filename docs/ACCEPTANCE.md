@@ -2,17 +2,17 @@
 
 设备目标：iPhone 13 Pro Max / iOS 26.3。未实际执行的项目保持「待测」，不能依据源码或构建成功填写「通过」。
 
-- 测试日期：待填写
+- 构建与下载校验日期：2026-10-21；真机测试日期待填写
 - 实际 iOS 版本及构建号：待填写
 - 微信版本：待填写
-- GitHub 构建链接及 commit：待填写
-- IPA SHA-256：待填写（构建附件中的 `.sha256` 文件）
+- GitHub 构建链接及 commit：[39524699060](https://github.com/Quinng988419/keyboard-install-probe/actions/runs/39524699060)，`bda4260b6ab265338530358101570d8b9b24536c`
+- IPA SHA-256：`b0e6b8899cd9f21e0a7f781e3baf833e0e75a16f76d6f15e8ead11e7093f047c`
 - AltStore / AltServer 版本：待填写
 
 | 检查 | 通过标准 | 结果 | 错误或证据 |
 |---|---|---|---|
-| 云端编译 | Release 的 iOS 真机构建成功 | 待测 | |
-| IPA 结构 | `validation.json` 中有主 App、键盘 ID，平台为 iOS device arm64 | 待测 | |
+| 云端编译 | Release 的 iOS 真机构建成功 | 通过 | Actions 39524699060，build 用时 37 秒 |
+| IPA 结构 | `validation.json` 中有主 App、键盘 ID，平台为 iOS device arm64 | 通过 | 云端校验通过，下载后在 Windows 再次校验通过；SHA-256 一致 |
 | 签名安装 | AltStore 安装完成，主 App 能打开 | 待测 | |
 | 系统注册 | 添加新键盘列表出现「测试键盘」 | 待测 | |
 | 无完全访问 | 保持完全访问关闭也能执行本轮全部操作 | 待测 | |
